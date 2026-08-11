@@ -4,18 +4,6 @@ An AI-powered mock interview platform that simulates real-world interview scenar
 
 ---
 
-## 🚀 Live Demo
-
-👉 https://your-streamlit-link-here
-
----
-
-## 🎬 Demo Preview
-
-![Demo](assets/demo.gif)
-
----
-
 ## ✨ Features
 
 * 🎯 AI-generated technical & behavioral interview questions
