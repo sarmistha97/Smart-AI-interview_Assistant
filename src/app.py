@@ -2,9 +2,13 @@ import streamlit as st
 from scoring import semantic_similarity, concept_coverage
 import json
 
-#load questions
-with open("../data/questions.json") as f :
-    data = json.load(f)
+from pathlib import Path
+import json
+
+DATA_FILE = Path(__file__).parent.parent / "data" / "questions.json"
+
+with open(DATA_FILE, "r", encoding="utf-8") as f:
+    questions = json.load(f)
 
 st.title("hello world")
 
