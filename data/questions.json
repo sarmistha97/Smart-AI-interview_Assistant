@@ -211,7 +211,7 @@
       "ideal_answer": "A Binary Search Tree is a binary tree where every node follows the property that all values in the left subtree are smaller and all values in the right subtree are larger. This ordering enables efficient search, insertion, and deletion operations with average complexity of O(log n)."
     }
 
-  }
+  },
 
   {
   "dbms": {
@@ -431,6 +431,4 @@
     }
 
   }
-}
-
 }
