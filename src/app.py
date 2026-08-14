@@ -8,7 +8,7 @@ import json
 DATA_FILE = Path(__file__).parent.parent / "data" / "questions.json"
 
 with open(DATA_FILE, "r", encoding="utf-8") as f:
-    questions = json.load(f)
+    data = json.load(f)
 
 st.title("hello world")
 
