@@ -20,6 +20,417 @@
         "half search space": "Why does binary search eliminate half the search space each step?"
       },
       "ideal_answer": "Binary search is an algorithm used to search for an element in a sorted array by repeatedly dividing the search interval in half. It compares the target value with the middle element of the array. If the target is smaller, the search continues in the left half; otherwise, it continues in the right half. This process repeats until the element is found or the interval becomes empty. Since the search space is halved at each step, the time complexity is O(log n)."
+    },
+
+    "two_pointers": {
+      "question": "What is the Two Pointers technique and where is it commonly used?",
+      "difficulty": 1,
+      "key_concepts": [
+        "array traversal",
+        "sorted arrays",
+        "left and right pointers",
+        "space optimization",
+        "pair problems",
+        "O(n)"
+      ],
+      "follow_ups": {
+        "array traversal": "How do two pointers reduce unnecessary traversals?",
+        "sorted arrays": "Why is the technique especially useful on sorted arrays?",
+        "left and right pointers": "How are the pointers moved during execution?",
+        "space optimization": "How does it improve space complexity?",
+        "pair problems": "Can you give an example problem solved using two pointers?"
+      },
+      "ideal_answer": "The Two Pointers technique uses two indices that move through a data structure to solve problems efficiently. It is commonly used in sorted arrays, linked lists, and substring problems. Instead of using nested loops, two pointers often achieve O(n) time complexity by traversing the structure only once."
+    },
+
+    "sliding_window": {
+      "question": "What is the Sliding Window technique and when should it be used?",
+      "difficulty": 2,
+      "key_concepts": [
+        "contiguous subarrays",
+        "fixed window",
+        "variable window",
+        "two pointers",
+        "O(n)",
+        "optimization"
+      ],
+      "follow_ups": {
+        "contiguous subarrays": "Why is sliding window suitable for contiguous segments?",
+        "fixed window": "How does a fixed-size window work?",
+        "variable window": "When do we use a variable-size window?",
+        "two pointers": "How are two pointers involved in sliding window?",
+        "optimization": "How does it improve over brute force approaches?"
+      },
+      "ideal_answer": "Sliding Window is an optimization technique used for problems involving contiguous subarrays or substrings. It maintains a window of elements and updates it incrementally instead of recalculating values repeatedly. This often reduces time complexity from O(n²) to O(n)."
+    },
+
+    "recursion": {
+      "question": "What is recursion and what are its key components?",
+      "difficulty": 1,
+      "key_concepts": [
+        "function calls",
+        "base case",
+        "recursive case",
+        "call stack",
+        "divide problems",
+        "termination"
+      ],
+      "follow_ups": {
+        "base case": "Why is the base case necessary?",
+        "recursive case": "What happens if the recursive case is incorrect?",
+        "call stack": "How does recursion use the call stack?",
+        "termination": "What causes infinite recursion?",
+        "divide problems": "Why is recursion suitable for divide-and-conquer algorithms?"
+      },
+      "ideal_answer": "Recursion is a programming technique where a function calls itself to solve a problem. It consists of a base case that stops recursion and a recursive case that reduces the problem into smaller subproblems. The system uses the call stack to keep track of function calls."
+    },
+
+    "backtracking": {
+      "question": "What is backtracking and how does it work?",
+      "difficulty": 3,
+      "key_concepts": [
+        "search space",
+        "decision tree",
+        "constraints",
+        "recursive exploration",
+        "undo choices",
+        "pruning"
+      ],
+      "follow_ups": {
+        "search space": "What is meant by the search space?",
+        "decision tree": "How can backtracking be represented as a decision tree?",
+        "constraints": "How do constraints help reduce computation?",
+        "undo choices": "Why is reverting decisions important?",
+        "pruning": "What is pruning in backtracking?"
+      },
+      "ideal_answer": "Backtracking is a problem-solving technique that explores all possible solutions by building candidates incrementally. If a candidate violates constraints, the algorithm abandons it and returns to a previous state. It is commonly used in N-Queens, Sudoku, and permutation generation."
+    },
+
+    "linked_list": {
+      "question": "What is a linked list and how does it differ from an array?",
+      "difficulty": 1,
+      "key_concepts": [
+        "nodes",
+        "dynamic memory",
+        "next pointer",
+        "sequential access",
+        "insertion",
+        "deletion"
+      ],
+      "follow_ups": {
+        "nodes": "What does a node contain?",
+        "dynamic memory": "How is memory allocated in linked lists?",
+        "next pointer": "What is the purpose of the next pointer?",
+        "insertion": "Why are insertions efficient in linked lists?",
+        "deletion": "How is deletion performed?"
+      },
+      "ideal_answer": "A linked list is a linear data structure where elements are stored as nodes connected by pointers. Unlike arrays, linked lists do not require contiguous memory and allow efficient insertions and deletions. However, accessing an element requires sequential traversal."
+    },
+
+    "stack": {
+      "question": "Explain the Stack data structure and its operations.",
+      "difficulty": 1,
+      "key_concepts": [
+        "LIFO",
+        "push",
+        "pop",
+        "peek",
+        "recursion",
+        "expression evaluation"
+      ],
+      "follow_ups": {
+        "LIFO": "What does Last In First Out mean?",
+        "push": "What happens during a push operation?",
+        "pop": "What happens during a pop operation?",
+        "peek": "How is peek different from pop?",
+        "expression evaluation": "How are stacks used in expression evaluation?"
+      },
+      "ideal_answer": "A stack is a linear data structure that follows the Last In First Out principle. Elements are inserted using push and removed using pop. Common applications include function call management, recursion, expression evaluation, and undo operations."
+    },
+
+    "queue": {
+      "question": "What is a Queue and how does it work?",
+      "difficulty": 1,
+      "key_concepts": [
+        "FIFO",
+        "enqueue",
+        "dequeue",
+        "front",
+        "rear",
+        "scheduling"
+      ],
+      "follow_ups": {
+        "FIFO": "What does First In First Out mean?",
+        "enqueue": "How is an element inserted?",
+        "dequeue": "How is an element removed?",
+        "front": "What does the front pointer represent?",
+        "scheduling": "How are queues used in CPU scheduling?"
+      },
+      "ideal_answer": "A queue is a linear data structure that follows the First In First Out principle. Elements are inserted at the rear and removed from the front. Queues are widely used in scheduling, buffering, and breadth-first search."
+    },
+
+    "trees": {
+      "question": "What is a tree data structure and what are its basic terminologies?",
+      "difficulty": 1,
+      "key_concepts": [
+        "root",
+        "parent child relationship",
+        "leaf node",
+        "height",
+        "subtree",
+        "hierarchical structure"
+      ],
+      "follow_ups": {
+        "root": "What is the root node?",
+        "leaf node": "What is a leaf node?",
+        "height": "How is tree height calculated?",
+        "subtree": "What is a subtree?",
+        "hierarchical structure": "Why are trees useful for hierarchical data?"
+      },
+      "ideal_answer": "A tree is a hierarchical data structure consisting of nodes connected by edges. The topmost node is called the root, and nodes may have child nodes. Trees are widely used to represent hierarchical relationships such as file systems and organizational structures."
+    },
+
+    "bst": {
+      "question": "What is a Binary Search Tree and what properties does it satisfy?",
+      "difficulty": 2,
+      "key_concepts": [
+        "binary tree",
+        "ordering property",
+        "left subtree",
+        "right subtree",
+        "search efficiency",
+        "inorder traversal"
+      ],
+      "follow_ups": {
+        "ordering property": "What ordering property does a BST follow?",
+        "left subtree": "What values can appear in the left subtree?",
+        "right subtree": "What values can appear in the right subtree?",
+        "search efficiency": "Why are searches efficient in BSTs?",
+        "inorder traversal": "What does inorder traversal produce?"
+      },
+      "ideal_answer": "A Binary Search Tree is a binary tree where every node follows the property that all values in the left subtree are smaller and all values in the right subtree are larger. This ordering enables efficient search, insertion, and deletion operations with average complexity of O(log n)."
     }
+
   }
+
+  {
+  "dbms": {
+
+    "normalization": {
+      "question": "What is normalization in DBMS and why is it important?",
+      "difficulty": 2,
+      "key_concepts": [
+        "data redundancy",
+        "normal forms",
+        "functional dependency",
+        "data integrity",
+        "database design",
+        "decomposition"
+      ],
+      "follow_ups": {
+        "data redundancy": "How does normalization reduce data redundancy?",
+        "normal forms": "What are the different normal forms?",
+        "functional dependency": "What is a functional dependency?",
+        "data integrity": "How does normalization improve data integrity?",
+        "decomposition": "What is decomposition in normalization?"
+      },
+      "ideal_answer": "Normalization is the process of organizing data in a database to reduce redundancy and improve consistency. It involves decomposing tables into smaller related tables according to normal forms such as 1NF, 2NF, and 3NF. This improves data integrity and minimizes anomalies during insert, update, and delete operations."
+    },
+
+    "indexing": {
+      "question": "What is indexing in a database and how does it improve performance?",
+      "difficulty": 2,
+      "key_concepts": [
+        "search optimization",
+        "b-tree",
+        "primary index",
+        "secondary index",
+        "query performance",
+        "storage overhead"
+      ],
+      "follow_ups": {
+        "search optimization": "How does indexing speed up searches?",
+        "b-tree": "Why are B-Trees commonly used for indexing?",
+        "primary index": "What is a primary index?",
+        "secondary index": "How does a secondary index differ from a primary index?",
+        "storage overhead": "What are the trade-offs of using indexes?"
+      },
+      "ideal_answer": "An index is a data structure that improves the speed of data retrieval operations in a database. Instead of scanning the entire table, the database uses the index to quickly locate records. While indexes improve query performance, they require additional storage and can slow down insert and update operations."
+    },
+
+    "transactions": {
+      "question": "What is a transaction in DBMS?",
+      "difficulty": 2,
+      "key_concepts": [
+        "logical unit of work",
+        "commit",
+        "rollback",
+        "consistency",
+        "concurrency",
+        "database operations"
+      ],
+      "follow_ups": {
+        "logical unit of work": "Why is a transaction considered a logical unit of work?",
+        "commit": "What happens during a commit operation?",
+        "rollback": "When is rollback used?",
+        "consistency": "How do transactions maintain consistency?",
+        "concurrency": "How are concurrent transactions handled?"
+      },
+      "ideal_answer": "A transaction is a sequence of database operations treated as a single logical unit of work. It ensures that either all operations are completed successfully through commit or none are applied through rollback. Transactions help maintain consistency and reliability in databases."
+    },
+
+    "acid_properties": {
+      "question": "Explain the ACID properties of a database transaction.",
+      "difficulty": 2,
+      "key_concepts": [
+        "atomicity",
+        "consistency",
+        "isolation",
+        "durability",
+        "reliability",
+        "transaction management"
+      ],
+      "follow_ups": {
+        "atomicity": "What does atomicity guarantee?",
+        "consistency": "How does consistency maintain database correctness?",
+        "isolation": "Why is isolation important in concurrent transactions?",
+        "durability": "How is durability achieved?",
+        "transaction management": "How do ACID properties improve transaction management?"
+      },
+      "ideal_answer": "ACID stands for Atomicity, Consistency, Isolation, and Durability. Atomicity ensures all operations succeed or fail together. Consistency maintains valid database states. Isolation prevents transaction interference, and Durability guarantees committed data survives system failures."
+    },
+
+    "joins": {
+      "question": "What are joins in SQL and why are they used?",
+      "difficulty": 2,
+      "key_concepts": [
+        "inner join",
+        "left join",
+        "right join",
+        "full join",
+        "table relationships",
+        "foreign key"
+      ],
+      "follow_ups": {
+        "inner join": "How does an inner join work?",
+        "left join": "What records are returned in a left join?",
+        "right join": "How does a right join differ from a left join?",
+        "full join": "What is returned in a full outer join?",
+        "foreign key": "How do foreign keys help in joins?"
+      },
+      "ideal_answer": "Joins are SQL operations used to combine rows from multiple tables based on related columns. Common types include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN. Joins enable efficient retrieval of related information stored across different tables."
+    }
+
+  },
+
+  "operating_systems": {
+
+    "process_vs_thread": {
+      "question": "What is the difference between a process and a thread?",
+      "difficulty": 2,
+      "key_concepts": [
+        "execution unit",
+        "memory space",
+        "context switching",
+        "multithreading",
+        "resource sharing",
+        "independence"
+      ],
+      "follow_ups": {
+        "execution unit": "What is the basic execution unit of a process?",
+        "memory space": "How do processes and threads differ in memory usage?",
+        "context switching": "Why is thread context switching faster?",
+        "resource sharing": "What resources do threads share?",
+        "multithreading": "Why is multithreading useful?"
+      },
+      "ideal_answer": "A process is an independent program in execution with its own memory space, while a thread is a lightweight unit of execution within a process. Threads share resources such as memory and files, making them more efficient than processes for concurrent execution."
+    },
+
+    "scheduling": {
+      "question": "What is CPU scheduling and why is it important?",
+      "difficulty": 2,
+      "key_concepts": [
+        "cpu utilization",
+        "fcfs",
+        "sjf",
+        "round robin",
+        "waiting time",
+        "turnaround time"
+      ],
+      "follow_ups": {
+        "cpu utilization": "How does scheduling improve CPU utilization?",
+        "fcfs": "How does First Come First Serve scheduling work?",
+        "sjf": "What is the Shortest Job First algorithm?",
+        "round robin": "How does Round Robin scheduling work?",
+        "waiting time": "Why is minimizing waiting time important?"
+      },
+      "ideal_answer": "CPU scheduling determines which process gets CPU access at a given time. Scheduling algorithms such as FCFS, SJF, and Round Robin aim to maximize CPU utilization, minimize waiting time, and improve overall system performance."
+    },
+
+    "deadlock": {
+      "question": "What is a deadlock and how can it be prevented?",
+      "difficulty": 3,
+      "key_concepts": [
+        "resource contention",
+        "mutual exclusion",
+        "hold and wait",
+        "circular wait",
+        "deadlock prevention",
+        "deadlock detection"
+      ],
+      "follow_ups": {
+        "resource contention": "How does resource contention lead to deadlocks?",
+        "mutual exclusion": "What is mutual exclusion?",
+        "hold and wait": "Why is hold and wait a deadlock condition?",
+        "circular wait": "What is circular wait?",
+        "deadlock prevention": "How can deadlocks be prevented?"
+      },
+      "ideal_answer": "A deadlock occurs when multiple processes wait indefinitely for resources held by one another. Four necessary conditions are mutual exclusion, hold and wait, no preemption, and circular wait. Deadlocks can be handled through prevention, avoidance, detection, and recovery techniques."
+    },
+
+    "virtual_memory": {
+      "question": "What is virtual memory and why is it used?",
+      "difficulty": 2,
+      "key_concepts": [
+        "logical memory",
+        "physical memory",
+        "address translation",
+        "disk storage",
+        "memory management",
+        "efficiency"
+      ],
+      "follow_ups": {
+        "logical memory": "What is logical memory?",
+        "physical memory": "How does virtual memory relate to physical memory?",
+        "address translation": "How are virtual addresses translated?",
+        "disk storage": "Why is disk storage used in virtual memory?",
+        "memory management": "How does virtual memory improve memory management?"
+      },
+      "ideal_answer": "Virtual memory is a memory management technique that allows programs to use more memory than physically available in RAM. It creates an abstraction of a large address space by using disk storage as an extension of memory. This improves multitasking and efficient memory utilization."
+    },
+
+    "paging": {
+      "question": "What is paging and how does it solve memory management problems?",
+      "difficulty": 2,
+      "key_concepts": [
+        "pages",
+        "frames",
+        "page table",
+        "address mapping",
+        "fragmentation",
+        "memory allocation"
+      ],
+      "follow_ups": {
+        "pages": "What are pages in paging?",
+        "frames": "What are frames in physical memory?",
+        "page table": "What is the role of a page table?",
+        "address mapping": "How are logical addresses mapped to physical addresses?",
+        "fragmentation": "How does paging reduce external fragmentation?"
+      },
+      "ideal_answer": "Paging is a memory management technique that divides logical memory into fixed-size pages and physical memory into frames. A page table maps pages to frames, enabling efficient memory allocation and eliminating external fragmentation."
+    }
+
+  }
+}
+
 }
